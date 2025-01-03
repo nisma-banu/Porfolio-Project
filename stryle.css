@@ -1,0 +1,266 @@
+.container, .row, .image-container, .name {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Visible state after scroll */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(249,250,255,255) ;
+}
+
+
+header{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav{
+    width:100%;
+    max-width:1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:150px;
+
+
+
+}
+.logo{
+    flex:1;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 60px;
+   
+}
+ul{
+    display: flex;
+    gap:20px;
+    flex:2;
+}
+
+.navlist{
+    list-style-type: none;
+}
+.navlist a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.76);
+
+
+}
+.menu{
+    padding-right:40px;
+    display: none;
+}
+.outer-div{
+    background-color:rgba(87,119,255,255);
+    padding:9px;
+    border-radius: 7px;
+    justify-content: center;
+    display: flex;
+}
+.outer-div:hover{
+ background-color: rgba(0, 0, 0, 0.76); ;
+}
+.navlist a:hover{
+    color:rgba(87,119,255,255);
+
+}
+.sidebar{
+    position:absolute;
+    right:-300px;
+    max-width:300px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:rgba(242,244,255,255);
+    box-shadow:2px 2px 2px rgba(0,0,0,0.6);
+     height:100vh;
+     position:fixed;
+     gap:60px;
+     transition:all 1.2s ease-in-out;
+     z-index:999;
+    
+}
+.sidebar ul{
+    
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    gap:30px;
+    
+}
+.side-logo{
+    flex:0;
+    margin-top:50px;
+}
+.cancel{
+    position:absolute;
+    top:50px;
+    right:20px;
+}
+@media(max-width:900px){
+    .navlist{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    
+}
+
+
+#introduction {
+    height:100vh;
+    color: black;
+    padding: 50px 0;
+}
+
+#introduction h2 {
+    color: black;
+    position: relative;
+    font-weight: bold;
+    
+}
+
+#introduction p {
+    color: rgba(0, 0, 0, 0.76);
+}
+
+#introduction .btn-primary {
+    background-color: rgba(87, 119, 255, 1);
+    border-color: rgba(87, 119, 255, 1);
+}
+
+#introduction .btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.icon-btn {
+    background-color:#eaeeff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+.social-icon{
+    color: rgba(87, 119, 255, 1);
+    
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    animation: move 2s infinite alternate;
+}
+
+/* Roll animation for name */
+@keyframes roll {
+    0% { top: 0; }
+    50% { top: 45px; } /* Rolls to 30px down */
+    51% { bottom: 45px; } /* Pause for 2 seconds */
+    100% { bottom: 0; } 
+}
+.name{
+    position: relative;
+    top:13px;
+    background-color: rgba(87, 119, 255, 1);
+    padding:10px 20px;
+    color:white;
+    border-radius: 50px ;
+    display: inline-block;
+    overflow: hidden;
+  
+    
+}
+.name span{
+    
+    position: relative;
+    animation: roll 1.5s ease-in-out infinite;
+    animation-delay: 2s;
+    
+   
+}
+
+
+
+/* Image move animation */
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* About Me Section */
+/* About Me Section */
+#about-me {
+    padding: 50px 0;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+#about-me h2 {
+    font-weight: bold;
+}
+
+.skills-section .card {
+    
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    opacity: 0; /* Hidden initially for animation */
+    transform: translateX(50px); /* Initial state for animation */
+}
+
+.skills-section .card:hover {
+    transform: scale(1.05);
+}
+.skill-card{
+    max-width:100px;
+}
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.skill-icon img {
+    width: 50%;
+}
+
+/* Animation Directions */
+
+/* Animation applied when element is in view */
+.skill-card.visible .card {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
