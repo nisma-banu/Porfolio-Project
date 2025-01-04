@@ -75,7 +75,7 @@ ul{
     display: flex;
 }
 .outer-div:hover{
- background-color: rgba(0, 0, 0, 0.76); ;
+ background-color:#ffb1cd; ;
 }
 .navlist a:hover{
     color:rgba(87,119,255,255);
@@ -126,7 +126,7 @@ ul{
 
 
 #introduction {
-    height:100vh;
+    
     color: black;
     padding: 50px 0;
 }
@@ -148,7 +148,7 @@ ul{
 }
 
 #introduction .btn-primary:hover {
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: #ffb1cd;
 }
 
 .icon-btn {
@@ -215,52 +215,54 @@ ul{
     100% { transform: translateY(0); }
 }
 
-/* About Me Section */
-/* About Me Section */
-#about-me {
-    padding: 50px 0;
-    color: rgba(0, 0, 0, 0.76);
-}
-
-#about-me h2 {
-    font-weight: bold;
-}
-
-.skills-section .card {
-    
+/* Progress bar styling */
+/* Skill Card Styling */
+/* Skill Card Styling */
+.skill-card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    opacity: 0; /* Hidden initially for animation */
-    transform: translateX(50px); /* Initial state for animation */
-}
-
-.skills-section .card:hover {
-    transform: scale(1.05);
-}
-.skill-card{
-    max-width:100px;
-}
-
-.skill-icon {
-    width: 70px;
-    height: 70px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
     overflow: hidden;
+    
 }
 
-.skill-icon img {
-    width: 50%;
+/* Circular Progress Container */
+.circular-progress-container {
+    position: relative;
+    width: 110px;
+    height: 110px;
+   
 }
 
-/* Animation Directions */
+/* Circular Progress Bar */
+.circular-progress {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(rgba(87, 119, 255, 1) 0%, #e9ecef 0%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
 
-/* Animation applied when element is in view */
-.skill-card.visible .card {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 1s ease, transform 1s ease;
+/* Image Styling */
+.circular-progress .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    
+}
+.skills-outline{
+    background-color: aliceblue; 
+    width:100px;
+     height:100px;
+      border-radius: 50%;
+       display: flex;
+       align-items: center;
+        justify-content: center;
 }

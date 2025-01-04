@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Nisma's portfolio - Freelance Designer & Developer.">
+    <title>Nisma's Portfolio</title>
     <link rel="stylesheet" href="./stryle.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -72,56 +72,51 @@
             </div>
             <div class="col-md-6">
                 <div class="image-container">
-                    <img src="./work.png" alt="Nisma" class="img-fluid rounded-circle image-move">
+                    <img src="../images/profile.png" alt="Nisma" class="img-fluid rounded-circle image-move">
                 </div>
             </div>
         </div>
     </section>
     <section id="about-me" class="container my-5">
-        <h2 class="display-6 text-center mb-4">About Me</h2>
-        <p class="lead text-center mb-5">
-            I'm a web developer with over one year of experience in building dynamic, user-friendly websites. I specialize in front-end and back-end technologies, delivering high-quality web solutions.
-        </p>
-    
-        <div class="skills-section row">
-            <!-- Skill Card HTML -->
-            <div class="col-md-3 col-sm-6 skill-card" data-animate="left">
-                <div class="card text-center p-4">
-                    <div class="skill-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <img src="./html.png" alt="HTML" class="img-fluid">
+        <div class="row">
+            <!-- Skill Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                            <img src="data:image/png;base64,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" alt="HTML" class="profile-img">
+                        </div>
+                        </div>
+                        
                     </div>
-                    <h5 class="mt-3">HTML</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 skill-card" data-animate="right">
-                <div class="card text-center  p-4">
-                    <div class="skill-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <img src="./icons/css.svg" alt="CSS" class="img-fluid">
+        
+            <!-- Repeat for other skills -->
+            <div class="col-md-4 mb-4">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="85">
+                            <div class="skills-outline">
+                            <img src="./images/html.png" alt="CSS" class="profile-img">
+                            </div>
+                        </div>
                     </div>
-                    <h5 class="mt-3">CSS</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 skill-card" data-animate="left">
-                <div class="card text-center p-4">
-                    <div class="skill-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <img src="./icons/javascript.svg" alt="JavaScript" class="img-fluid">
-                    </div>
-                    <h5 class="mt-3">JavaScript</h5>
-                </div>
-                
-            </div>
-            <div class="col-md-3 col-sm-6 skill-card" data-animate="left">
-                <div class="card text-center p-4">
-                    <div class="skill-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <img src="./icons/javascript.svg" alt="JavaScript" class="img-fluid">
-                    </div>
-                    <h5 class="mt-3">JavaScript</h5>
-                </div>
-            <!-- Add similar cards for jQuery, React, Node, MySQL, Git, Java, Python -->
         </div>
+           
+        
     </section>
-    
-    
+   
     
     <script src="./script.js">
        
