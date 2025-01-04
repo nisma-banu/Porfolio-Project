@@ -19,6 +19,9 @@
 body{
     background-color:rgba(249,250,255,255) ;
 }
+section{
+    min-height: 100vh;
+}
 
 
 header{
@@ -218,14 +221,25 @@ ul{
 /* Progress bar styling */
 /* Skill Card Styling */
 /* Skill Card Styling */
+.about-para{
+
+    width:100%;
+    max-width: 750px;
+    text-align: center;
+    padding:5px;
+    font-size: 1.2rem;
+}
 .skill-card {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   
     border: none;
     border-radius: 10px;
     overflow: hidden;
     
 }
-
+.skill-card:hover{
+    box-shadow: 0px 4px 12px rgba(199, 159, 211, 0.623);
+}
 /* Circular Progress Container */
 .circular-progress-container {
     position: relative;
@@ -258,11 +272,53 @@ ul{
     
 }
 .skills-outline{
-    background-color: aliceblue; 
+    background-color: white; 
     width:100px;
      height:100px;
       border-radius: 50%;
        display: flex;
        align-items: center;
         justify-content: center;
+}
+.service-row {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.service-left {
+    transform: translateX(200px);
+}
+
+.service-right {
+    transform: translateX(-200px);
+}
+
+/* When visible, reset transformations */
+.service-row.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-heading{
+    background: linear-gradient(to right,rgba(87, 119, 255, 1), #0835ff,#ffb1cd,yellow,yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+}
+.sub-heading:hover{
+    background: linear-gradient(to right,yellow,yellow,#ffb1cd, #0835ff,rgba(87, 119, 255, 1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.side-heading{
+    color: #2f3060;
+}
+.section-back{
+    background-color:#eaeeff;
+    width:100%; 
+    padding:20px 0px ;
+}
+#services p{
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.685);
 }

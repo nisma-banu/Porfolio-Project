@@ -55,6 +55,7 @@
         
     </header>
     <section id="introduction" class="container  my-5">
+        
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h2 class="display-6 mb-3">Hello, I'm <div class='name'><span>Nisma</span></div></h2>
@@ -72,38 +73,53 @@
             </div>
             <div class="col-md-6">
                 <div class="image-container">
-                    <img src="../images/profile.png" alt="Nisma" class="img-fluid rounded-circle image-move">
+                    <img src="./images/profile.png" alt="Nisma" class="img-fluid rounded-circle image-move">
                 </div>
             </div>
         </div>
     </section>
-    <section id="about-me" class="container my-5">
-        <div class="row">
-            <!-- Skill Card -->
-            <div class="col-md-4 mb-4">
+    <section id="about-me" class="container my-5 ">
+        <div class="row mb-5 ">
+            <div class="col-12 d-flex flex-column">
+                <h2 class="sub-heading text-center mb-3">ABOUT ME</h2>
+                <p class="about-para align-self-center" style="color: rgba(66, 62, 62, 0.726); ">
+                    I am a passionate web developer with expertise in front-end and back-end technologies. 
+                    I enjoy building user-friendly, responsive, and dynamic websites and applications. 
+                    I strive to deliver high-quality solutions for a seamless user experience.
+                </p>
+            </div>
+        </div>
+    
+        <!-- My Skills Heading -->
+        <div class="row mb-4">
+            
+                <h3 class="text-center">My Skills</h3>
+            
+        </div>
+        <div class="row row-cols-lg-6 row-cols-md-4 row-cols-sm-3 row-cols-2 g-4">
+            <!-- Skill Card 1 -->
+            <div class="col">
                 <div class="card skill-card text-center">
                     <div class="circular-progress-container mx-auto mt-3">
-                        
                         <div class="circular-progress" data-progress="90">
                             <div class="skills-outline">
-                            <img src="data:image/png;base64,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" alt="HTML" class="profile-img">
+                                <img src="./images/new-html.png" alt="HTML" class="profile-img">
+                            </div>
                         </div>
-                        </div>
-                        
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">HTML</h5>
                     </div>
                 </div>
             </div>
-        
-            <!-- Repeat for other skills -->
-            <div class="col-md-4 mb-4">
+    
+            <!-- Skill Card 2 -->
+            <div class="col">
                 <div class="card skill-card text-center">
                     <div class="circular-progress-container mx-auto mt-3">
                         <div class="circular-progress" data-progress="85">
                             <div class="skills-outline">
-                            <img src="./images/html.png" alt="CSS" class="profile-img">
+                                <img src="./images/css.png" alt="CSS" class="profile-img">
                             </div>
                         </div>
                     </div>
@@ -112,10 +128,152 @@
                     </div>
                 </div>
             </div>
-        </div>
+    
+            <!-- Skill Card 3 -->
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="85">
+                            <div class="skills-outline">
+                                <img src="./images/javascript.png" alt="JavaScript" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Skill Card 4 -->
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="85">
+                            <div class="skills-outline">
+                                <img src="./images/bootstrap.png" alt="Bootstrap" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Skill Card 5 -->
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                                <img src="./images/react-js.png" alt="React" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">React</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Skill Card 6 -->
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                                <img src="./images/node-js.png" alt="Node.js" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Node.js</h5>
+                    </div>
+                </div>
+            </div>
            
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                                <img src="./images/mysql.png" alt="Mysql" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mysql</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                                <img src="./images/java.png" alt="Java" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card skill-card text-center">
+                    <div class="circular-progress-container mx-auto mt-3">
+                        <div class="circular-progress" data-progress="90">
+                            <div class="skills-outline">
+                                <img src="./images/python.png" alt="Python" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </section>
+    <div class="section-back">
+    <section id="services"  class="container my-5">
+        <!-- Services Heading -->
+        <div class="row mb-2 ">
+            <div class="col-12 text-center">
+                <h2 class="sub-heading mb-3">SERVICES</h2>
+                <h3 class="mb-3">I'm Specialized In</h3>
+            </div>
+        </div>
+    
+        <!-- Web Development Service -->
+        <div class="row">
+            <div class="col-12 d-flex align-items-center flex-wrap">
+                <div class="content service-row service-right col-md-6 p-4">
+                    <h4 class="side-heading">Web Development</h4>
+                    <p>Creating responsive, user-friendly, and dynamic websites tailored to your needs.</p>
+                </div>
+                <div class="image-container service-row service-left col-md-6">
+                    <img src="./images/web-development.png" alt="UI/UX Designing" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex align-items-center flex-wrap">
+                <div class="content service-row service-left col-md-6 p-4 order-md-2">
+                    <h4 class="side-heading">UI/UX Designing</h4>
+                    <p>Designing intuitive user interfaces and experiences that enhance usability.</p>
+                </div>
+                <div class="image-container service-row service-right col-md-6 order-md-1">
+                    <img src="./images/ui-ux.png" alt="UI/UX Designing" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
    
     
     <script src="./script.js">

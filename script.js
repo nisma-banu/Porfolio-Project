@@ -60,3 +60,19 @@ function animateCircularProgress(progressElement) {
 document.querySelectorAll(".skill-card").forEach((card) => {
     skillObserver.observe(card);
 });
+
+
+// Intersection Observer for animating service rows
+const serviceObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            serviceObserver.unobserve(entry.target); // Stop observing after animation
+        }
+    });
+}, { threshold: 0.5 });
+
+// Select and observe service rows
+const serviceRows = document.querySelectorAll(".service-row");
+serviceRows.forEach((row) => serviceObserver.observe(row));
+
