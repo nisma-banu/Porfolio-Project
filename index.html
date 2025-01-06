@@ -56,9 +56,10 @@
         
     </header>
     <section id="introduction" class="container  my-5">
+        <div>
         
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="intro-class col-md-6">
                 <h2 class="display-6 mb-3">Hello, I'm <div class='name'><span>Nisma</span></div></h2>
                 <h2 class="display-6 mb-3">welcome to my portfolio</h2>
                 <p class="lead">Freenlance Designer & Developer</p>
@@ -78,8 +79,12 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <section id="about-me" class="container my-5 ">
+        <div>
+
+        
         <div class="row mb-5 ">
             <div class="col-12 d-flex flex-column">
                 <h2 class="sub-heading text-center mb-3">ABOUT ME</h2>
@@ -104,7 +109,7 @@
                     <div class="circular-progress-container mx-auto mt-3">
                         <div class="circular-progress" data-progress="90">
                             <div class="skills-outline">
-                                <img src="./images/new-html.png" alt="HTML" class="profile-img">
+                                <img src="./images/icons8-html-5-48.png" alt="HTML" class="profile-img">
                             </div>
                         </div>
                     </div>
@@ -120,7 +125,7 @@
                     <div class="circular-progress-container mx-auto mt-3">
                         <div class="circular-progress" data-progress="85">
                             <div class="skills-outline">
-                                <img src="./images/css.png" alt="CSS" class="profile-img">
+                                <img src="./images/icons8-css-48.png" alt="CSS" class="profile-img">
                             </div>
                         </div>
                     </div>
@@ -152,7 +157,7 @@
                     <div class="circular-progress-container mx-auto mt-3">
                         <div class="circular-progress" data-progress="85">
                             <div class="skills-outline">
-                                <img src="./images/bootstrap.png" alt="Bootstrap" class="profile-img">
+                                <img src="./images/icons8-bootstrap-48.png" alt="Bootstrap" class="profile-img">
                             </div>
                         </div>
                     </div>
@@ -168,7 +173,7 @@
                     <div class="circular-progress-container mx-auto mt-3">
                         <div class="circular-progress" data-progress="90">
                             <div class="skills-outline">
-                                <img src="./images/react-js.png" alt="React" class="profile-img">
+                                <img src="./images/icons8-react-a-javascript-library-for-building-user-interfaces-24.png" alt="React" class="profile-img">
                             </div>
                         </div>
                     </div>
@@ -237,10 +242,11 @@
                 </div>
             </div>
         </div>
-        
+    </div>
     </section>
     <div class="section-back">
     <section id="services"  class="container my-5">
+        <div>
         <!-- Services Heading -->
         <div class="row mb-2 ">
             <div class="col-12 text-center">
@@ -274,6 +280,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>   
     
 </div>
@@ -295,8 +302,9 @@
             <div class="carousel-item active" data-bs-interval="10000">
                 <div class="project-item">
                     <img src="./images/cancer-survival.jpg" class="d-block w-100 project-img" alt="Project 1">
+                    <div class="project-heading">Student Management System</div>
                     <div class="text-center mt-3">
-                        <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+                        <a href="#" class="know-more-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -304,8 +312,9 @@
             <div class="carousel-item" data-bs-interval="2000">
                 <div class="project-item">
                     <img src="./images/students.jpg" class="d-block w-100 project-img" alt="Project 2">
+                    <div class="project-heading">Student Management System</div>
                     <div class="text-center mt-3">
-                        <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+                        <a href="#" class="know-more-btn">Know More</a>
                     </div>
                 </div>
             </div>
@@ -322,6 +331,64 @@
         </button>
     </div>
 </section>
+<section id="work-experience" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Work Experience</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-8">
+                <!-- Work Experience Card -->
+                <div class="experience-card">
+                    <div class="experience-head d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0">Web Developer</h4>
+                        <span class="duration">Oct 2023 - Present</span>
+                    </div>
+                    <div class="experience-body p-4">
+                    <h5 class="company-name mb-2 ">Ordinal Tech Solutions</h5>
+                    <p class="roles-responsibilities">
+                        
+                        <p>Developing and maintaining responsive websites.
+                            Implementing user-friendly interfaces with modern design principles.
+                            Creating animations and interactive features for enhanced UX.</p>
+                           
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section  id="contact"  >
+    <div class="container my-5">
+    <div class="row justify-content-center">
+        <h2 class="text-center mb-4 text-white">Contact Me</h2>
+        <div class="contact-outer  col-md-8">
+            <div class="contact-inner p-4">
+                <form action="https://formspree.io/f/meooprlk" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="send-btn px-5">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
     
     <script src="./script.js">
     

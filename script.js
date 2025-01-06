@@ -53,7 +53,7 @@ function animateCircularProgress(progressElement) {
                 #e9ecef ${currentValue}%
             )`;
         }
-    }, 20); // Adjust animation speed
+    }, 35); // Adjust animation speed
 }
 
 // Observe each skill card for progress bar animation
