@@ -18,6 +18,7 @@
 
 body{
     background-color:rgba(249,250,255,255) ;
+    
 }
 section{
     min-height: 100vh;
@@ -145,13 +146,14 @@ ul{
     color: rgba(0, 0, 0, 0.76);
 }
 
-#introduction .btn-primary {
+#introduction .btn-primary,#services .btn-primary {
     background-color: rgba(87, 119, 255, 1);
     border-color: rgba(87, 119, 255, 1);
 }
 
-#introduction .btn-primary:hover {
+#introduction .btn-primary:hover,#services .btn-primary:hover {
     background-color: #ffb1cd;
+    
 }
 
 .icon-btn {
@@ -321,4 +323,49 @@ ul{
 #services p{
     font-size: 1.1rem;
     color: rgba(0, 0, 0, 0.685);
+}
+/* Button Styling */
+#projects {
+ 
+    padding: 50px 0;
+}
+
+/* Carousel Image Styling */
+.project-img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   
+}
+.project-item{
+    object-fit: cover !important;
+  
+}
+.carousel{
+    max-width: 900px;
+}
+.project-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Know More Button */
+ .know-more-btn {
+    position: absolute;
+    z-index:999;
+    bottom:10%;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(87, 119, 255, 1);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+   
+}
+
+.know-more-btn:hover {
+    background-color: #ffb1cd;
+    transform: translateY(-5px);
 }
